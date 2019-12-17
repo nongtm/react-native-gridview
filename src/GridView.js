@@ -4,7 +4,7 @@ import React, {
 import PropTypes from 'prop-types';
 import {
   Dimensions,
-  ListView,
+  FlatList,
   StyleSheet,
   View,
 } from 'react-native';
@@ -64,7 +64,7 @@ class GridView extends Component {
     const itemsPerRow = this.itemsPerRow;
 
     return (
-      <ListView
+      <FlatList
         onLayout={(...args) => {
           /**
            * The grid data needs to be rebound if the items per row is
